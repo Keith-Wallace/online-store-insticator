@@ -7,6 +7,10 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keith-Wallace/online-store-insticator.git"
+  },
   "author": "Keith Wallace",
   "license": "ISC",
   "devDependencies": {
