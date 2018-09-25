@@ -1,0 +1,16 @@
+{
+  "name": "insticator",
+  "version": "1.0.0",
+  "description": "A single page application showcasing your new online store utilizing React/Redux or vanilla JS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Keith Wallace",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1"
+  }
+}
