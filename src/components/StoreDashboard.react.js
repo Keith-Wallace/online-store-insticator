@@ -3,8 +3,6 @@ import React, {Component}  from 'react'
 import ShoppingCart from './ShoppingCart.react'
 import StoreItem from './StoreItem.react'
 
-import shoppingCartHelpers from '../lib/shoppingCartHelpers'
-
 import './storeDashboard.scss'
 
 
