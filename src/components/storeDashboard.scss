@@ -1,0 +1,142 @@
+@import '../styles/settings.scss';
+
+.store-dashboard {
+  margin: 20px 0 0;
+
+  .store-dashboard-content {
+    margin: 0 20px;
+  }
+
+  .category-name {
+    border-bottom: 4px solid $greenDark;
+    flex: 0 0 100%;
+
+    h2 {
+      background: $greenDark;
+      color: $lightText;
+      display: inline-block;
+      margin: 0;
+      padding: 10px 40px;
+    }
+  }
+
+  .need-better-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .items-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .item-details {
+      border: 1px solid $greenDark;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: grid;
+      align-content: space-between;
+
+      .item-image {
+        min-height: 150px;
+        overflow: hidden;
+        position: relative;
+
+
+        img {
+          display: block;
+          left: 50%;
+          margin: 0 auto;
+          max-height: 150px;
+          max-width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .price-quantity strong { font-size: 1.75rem; }
+
+      div {
+        margin-bottom: 10px;
+
+        &:last-child { margin-bottom: 0; }
+      }
+    }
+  }
+
+  .add-button {
+    background: $greenDark;
+    border: 1px solid $greenDark;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: $greenMedium;
+      border-color: $greenMedium;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .need-better-name {
+      flex-direction: row;
+    }
+
+    .category-name {
+      margin: 0 -20px;
+
+      div { margin: 0 20px; }
+    }
+
+    .items-container {
+      flex-direction: row;
+      padding: 20px 20px 0;
+
+      .item-details {
+        flex: 0 0 calc(50% - 52px);
+        margin-right: 20px;
+
+        &:nth-child(2n) { margin-right: 0; }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+
+    .items-container { padding: 20px 20px 0; }
+  }
+
+  @media (min-width: 1280px) {
+
+    .category-name div,
+    .need-better-name {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .category-name { padding: 0 20px; }
+
+    .items-container {
+
+      .item-details {
+        flex: 0 0 calc(25% - 57px);
+
+        &:nth-child(2n) { margin-right: 20px; }
+
+        &:nth-child(4n) { margin-right: 0; }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
