@@ -14,6 +14,7 @@ What the UI shows us:
     * You can add or remove items from the cart and will revert the items quantity remaing.
     * Toggle to add/remove the quanity of item(s) in the shopping care. Buttons are disabled when remaining quaintity is `0`. it will also remove the item from the cart if you remove all instances of the item.
     * After confirming purchase, all items in the cart are cleared and the items remaing quantity retains it's number.
+  * Responsive Layout
 
 ### Takeaways
 * Would love to get away from using the current state managment and use Redux library instead. Still learing and once I get the hang of it i'll refactor this app.
