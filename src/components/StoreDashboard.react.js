@@ -30,15 +30,7 @@ export default class StoreDashboard extends Component {
     }
   }
 
-  confirmPurchase() {
-    // console.log('****** confirmPurchase() ******')
-    // console.log('==> ', this.state.cart)
-    // console.log('****** confirmPurchase() ******')
-
-    // ////////////////////////////////////////////////////////////////////////
-    this.setState({cart: []})
-    // ////////////////////////////////////////////////////////////////////////
-  }
+  confirmPurchase() { this.setState({cart: []}) }
 
   emptyCart() {
     let revertedStoreData = this.state.storeData.map(storeDataItem => {
@@ -211,7 +203,7 @@ export default class StoreDashboard extends Component {
             <div className='category-name'>
               <div><h2>{this.props.itemsCategory}</h2></div>
             </div>
-            <div className='need-better-name'>
+            <div className='item-wrapper'>
               <section className='items-container'>
                 {
                   this.state.storeData.map(item => (
