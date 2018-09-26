@@ -1,0 +1,122 @@
+@import '../styles/settings.scss';
+
+.shopping-cart-items {
+    color: black;
+    font-size: 12px;
+
+  .shopping-cart-item {
+    background: $greenMedium;
+    margin: 0 -20px 20px;
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+  strong {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  .remove,
+  .add {
+    border: 1px solid $darkText;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px 8px;
+  }
+
+  .delete {
+    color: $lightText;
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .item-row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    &:last-child { margin-bottom: 0; }
+
+    div { flex: 1; }
+  }
+
+  .cart-item-image {
+    display: inline-block;
+    margin-right: 20px;
+    max-width: 50px;
+    min-height: 50px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      left: 0;
+      max-height: 50px;
+      max-width: 100%;
+      mix-blend-mode: multiply; // https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  i {
+    border: solid $darkText;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+
+    &.down {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      margin-bottom: 2px;
+    }
+
+    &.up {
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      margin-bottom: -1px;
+    }
+  }
+
+  .cart-totals {
+    border-top: 2px solid $greenLight;
+    color: $lightText;
+    margin-right: -20px;
+    padding: 10px 20px 0 0;
+    text-align: right;
+
+    .total,
+    .empty-cart { margin-bottom: 10px; }
+
+    .total {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .empty-cart {
+      cursor: pointer;
+      display: inline-block;
+
+      &:hover { color: $greenLight; }
+    }
+
+    button {
+      background: $greenLight;
+      border: 1px solid $greenLight;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 700;
+      margin: 0 auto;
+      padding: 5px 20px;
+
+      &:hover {
+        background: $greenMedium;
+        border-color: $greenMedium;
+      }
+    }
+  }
+}
