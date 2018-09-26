@@ -12,13 +12,15 @@ export default class ShoppingCart extends Component {
     return (
       <section className='shopping-cart'>
         <h2>Shopping Cart</h2>
-        {
-          (cart.length !==0) && (
-            <div className='cart-size'>
-              {cart.length} {cart.length > 1 ? 'items' : 'item'}
-            </div>
-          )
-        }
+        <div className='cart-size'>
+          {
+            cart.length !==0 ? (
+              <span>{cart.length} {cart.length > 1 ? 'items' : 'item'}</span>
+            ) : (
+              <span>Your Shopping Cart is Empty</span>
+            )
+          }
+        </div>
         <ShoppingCartItems {...this.props} />
       </section>
     )
