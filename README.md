@@ -22,7 +22,7 @@ What the UI shows us:
 
 ### I Wanna see this Thing!
 Two ways:
-1. You can `git clone` this repo to your local machine and `run npm install` in your terminal. After all dependend packages are installed run `npm run start` and it will launch the application inside the browser.
-2. Live on [Heroku]()
+1. You can `git clone` this repo to your local machine and `run npm install` in your terminal. After all dependend packages are installed run `npm run dev` and it will launch the application inside the browser.
+2. Live on [Heroku](https://online-store-insticator-kw.herokuapp.com/)
 
 Thank you!!
